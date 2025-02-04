@@ -4861,13 +4861,6 @@ function run() {
         catch (err) {
             core.setFailed(err.message);
         }
-        // Always attempt to upload test result artifact
-        try {
-            yield uploadArtifact_1.uploadArtifact();
-        }
-        catch (err) {
-            core.setFailed(err.message);
-        }
     });
 }
 exports.run = run;
